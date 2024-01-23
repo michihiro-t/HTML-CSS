@@ -1,0 +1,349 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.image{
+    background-image: url('https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg');
+    background-size:cover;
+    background-position: center;
+    padding-bottom: 28px;
+}
+
+header{
+    padding-top: 20px;
+}
+
+.headerContainer{
+    display:flex;
+    justify-content: space-between;
+    margin:0 36px
+}
+
+.header-logo{
+    align-self: center;
+    padding-top: 5px;
+}
+
+.btn-burger {
+    cursor: pointer;
+    display: block;
+    width: 56px;
+    height: 60px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.icon, .icon::before, .icon::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px; 
+    width: 35px; 
+    background-color: #444;
+    border-radius: 2px;
+    display: block;
+    content: '';
+    cursor: pointer;
+    margin: auto;
+}
+
+.icon:before {
+    top: 13px;
+}
+
+.icon:after {
+    top: -26px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle:checked ~ .btn-burger .icon {
+    background: transparent;
+}
+
+.nav-toggle:checked ~ .btn-burger .icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.nav-toggle:checked ~ .btn-burger .icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.icon,.icon:before,.icon:after {
+    transition: all 0.5s;
+}
+
+.nav-toggle:checked ~ .nav .nav-list {
+    display: block;
+}
+
+
+.logo{
+    width: 200px;
+}
+
+.logo:hover{
+    opacity: 0.6;
+}
+
+ul{
+    display:flex;
+    list-style:none;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+li{
+    margin-left: 40px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;  
+}
+
+span{
+    font-size: 10px;
+}
+
+a{ 
+    text-decoration:none;
+}
+
+.list{
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.list:hover{
+    opacity: 0.6;
+}
+
+
+.page1{
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.content{
+    width: fit-content;
+}
+
+
+.cousering{
+    color:white;
+    background-color: #f79214;
+    padding: 15px;
+    border-radius: 100px;
+    top:10px;
+    display:flex;
+    font-size: 12px;
+}
+
+.cousering:hover{
+    opacity: 0.7;
+}
+
+.text{
+    display:inline-block;
+    text-align: center;
+    font-size :35px;
+    font-weight: bold;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.image2{
+    display:flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.cousering2{
+    color:white;
+    background-color: #f79214;
+    padding: 20px;
+    border-radius: 100px;
+    margin :20px 0px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.cousering2:hover{
+    opacity: 0.6;
+}
+
+.text3{
+    color :#a2a2a4;
+    font-size: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+
+}
+
+.page2_wrapper{
+    background-color: #f79214;
+    padding: 50px;
+}
+
+.page2{
+    max-width: 1140px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  
+}
+
+.video_src{
+    width: 50%;
+}
+
+.right_side{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 38px;
+}
+
+.text4{
+    margin-bottom: 24px;
+    max-width: 550px;
+}
+
+@media screen and ( max-width:1024px )
+{
+    .banner{
+        margin: auto;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .page2{
+        flex-direction: column;
+       
+    }
+
+    .video_src{
+       width: 75%; 
+    }
+}
+
+@media screen and ( max-width:767px )
+{
+    .image{
+        background-image: none;
+    }
+
+    .coverimage{
+        padding-top: 10px;
+        background-size:cover;
+        background-position: center;
+        width: 100%;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .text{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image2{
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    .page1{
+        margin-top: -55vw;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: none;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .image2{
+        max-width: auto;
+    }
+
+    .image2_1{
+        width: 27.5%;
+    }
+
+    .image2_2{
+        width: 40%;
+    }
+
+    .image2_3{
+        width: 27.5%;
+    }
+
+    .cousering2{
+        margin: 0px;
+        padding: 20px 0px;
+    }
+    
+    .page2_wrapper{
+        padding: 30px 0;
+    }
+
+    .page2{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .video_src{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+
+}
+
+@media screen and ( max-width:320px ){
+    .text{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .coverimage{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .btn-burger {
+        display: none;  
+    }
+}
